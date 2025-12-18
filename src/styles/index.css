@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* STATIC FONTS */
+@font-face {
+     font-family: 'Inter';
+     src: url('/fonts/Inter.ttf') format('truetype');
+}
+
+@font-face {
+     font-family: 'Roboto';
+     src: url('/fonts/Roboto.ttf') format('truetype');
+}
+
+@font-face {
+     font-family: 'Manrope';
+     src: url('/fonts/Manrope.ttf') format('truetype');
+}
+
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+
+     --color-primary: #F7F7F7;
+     --color-secondary: #000000;
+     --color-accent: #EAE4D5;
+
+     
+
+     --font-manrope: 'Manrope', sans-serif;
+     --font-roboto: 'Roboto', sans-serif;
+     --font-inter: 'Inter', sans-serif;
+
+}

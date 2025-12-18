@@ -1,0 +1,19 @@
+ /* CUSTOM SCROLLBAR */
+ body::-webkit-scrollbar {
+      width: 4px;
+ }
+
+ body::-webkit-scrollbar-track {
+      background: #1f1f1d;
+      border-radius: 10px;
+ }
+
+ body::-webkit-scrollbar-thumb {
+      background-color: #e4e4e48f;
+      border-radius: 10px;
+
+ }
+
+ body::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+ }
