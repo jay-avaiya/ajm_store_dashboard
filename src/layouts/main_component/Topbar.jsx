@@ -2,11 +2,20 @@ import React from "react";
 import { BsBell } from "react-icons/bs";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { useLocation } from "react-router-dom";
 
 const Topbar = () => {
+  const location = useLocation();
+
+  const path = location.pathname === "/dashboard";
+
   return (
     <header className="flex items-center justify-between h-[120px] border-b border-[#8E8E8E] p-5">
-      <h1 className="text-[#222222] text-[40px] font-medium">
+      <h1
+        className={` ${
+          !path && "invisible"
+        } text-[#222222] text-[40px] font-medium`}
+      >
         Welcome back, Vinit
       </h1>
 
