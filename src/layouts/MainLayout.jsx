@@ -5,11 +5,13 @@ import Topbar from "./main_component/Topbar";
 
 export default function MainLayout() {
   return (
-    <div className="flex min-h-screen font-poppins">
+    <div className="flex h-screen font-poppins overflow-hidden">
       <Sidebar />
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col overflow-hidden">
         <Topbar />
-        <Outlet />
+        <div className="flex-1 overflow-auto">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

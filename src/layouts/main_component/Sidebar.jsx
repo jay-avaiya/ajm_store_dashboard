@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { BiBrightness } from "react-icons/bi";
 import {
   MdAddAlert,
@@ -12,7 +12,7 @@ import { PiCodesandboxLogo, PiHandCoinsFill } from "react-icons/pi";
 import { RiMoneyRupeeCircleFill, RiUser3Fill } from "react-icons/ri";
 import { TbLayoutDashboardFilled } from "react-icons/tb";
 import { VscWatch } from "react-icons/vsc";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const menu = [
@@ -83,9 +83,22 @@ const Sidebar = () => {
     },
   ];
 
+  const location = useLocation();
+  const itemRefs = useRef({});
+
+  useEffect(() => {
+    const activeItem = itemRefs.current[location.pathname];
+    if (activeItem) {
+      activeItem.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [location.pathname]);
+
   return (
-    <div className="w-full max-w-[250px] p-4 font-poppins">
-      <div className="bg-white px-2 py-4 rounded-3xl w-full">
+    <div className="w-full max-w-[250px] h-screen p-4 font-poppins">
+      <div className="bg-white px-2 py-4 rounded-3xl w-full h-full overflow-y-auto sidebar-scroll">
         <ul className="space-y-3">
           {menu.map((m, i) => {
             const Icon = m.icon;

@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div className="flex-1 flex justify-between mt-8">
       {/* right content */}
-      <div className="flex-1 w-full max-w-[980px] ">
+      <div className="flex-1 w-full max-w-[980px]">
         {/* stats cards */}
         <StatCard />
 

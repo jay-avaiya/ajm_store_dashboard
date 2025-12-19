@@ -1,17 +1,19 @@
 import "./styles/App.css";
 import { Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import ProductManagement from "./pages/Main/ProductManagementPage/ProductManagement";
-import UserManagement from "./pages/Main/UserManagementPage/UserManagement";
-import Dashboard from "./pages/Main/DashboardPage/Dashboard";
 
-const AuthLayout = lazy(() => import("./layouts/AuthLayout"));
 const MainLayout = lazy(() => import("./layouts/MainLayout"));
-
-const LoginPage = lazy(() => import("./pages/Auth/Login/LoginPage"));
-const RegisterPage = lazy(() =>
-  import("./pages/Auth/RegisterPage/RegisterPage")
+const DashboardPage = lazy(() =>
+  import("./pages/Main/DashboardPage/Dashboard")
 );
+const ProductManagementPage = lazy(() =>
+  import("./pages/Main/ProductManagementPage/ProductManagement")
+);
+const UserManagementPage = lazy(() =>
+  import("./pages/Main/UserManagementPage/UserManagement")
+);
+const SettingPage = lazy(() => import("./pages/Main/SettingPage/Setting"));
+
 const NotFoundPage = lazy(() => import("./layouts/_default/NotFoundPage"));
 
 function App() {
@@ -22,15 +24,13 @@ function App() {
       <Routes>
         {/* Public Routes */}
         <Route path="/dashboard" element={<MainLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="product-management" element={<ProductManagement />} />
-          <Route path="user-management" element={<UserManagement />} />
-        </Route>
-
-        {/* Auth Routes */}
-        <Route element={<AuthLayout />}>
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
+          <Route index element={<DashboardPage />} />
+          <Route
+            path="product-management"
+            element={<ProductManagementPage />}
+          />
+          <Route path="user-management" element={<UserManagementPage />} />
+          <Route path="setting" element={<SettingPage />} />
         </Route>
 
         {/* 404 Route */}
