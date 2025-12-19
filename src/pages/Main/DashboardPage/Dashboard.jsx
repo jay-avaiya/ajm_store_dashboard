@@ -1,7 +1,3 @@
-import { Pencil } from "lucide-react";
-import React from "react";
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import { GoBellFill } from "react-icons/go";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import StatCard from "./_components/StatCard";
 import NotificationBox from "../../../components/NotificationBox";
