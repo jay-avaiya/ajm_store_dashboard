@@ -13,6 +13,9 @@ const UserManagementPage = lazy(() =>
   import("./pages/Main/UserManagementPage/UserManagement")
 );
 const SettingPage = lazy(() => import("./pages/Main/SettingPage/Setting"));
+const AppIntegrationPage = lazy(() =>
+  import("./pages/Main/AppIntegrationPage/AppIntegration")
+);
 
 const NotFoundPage = lazy(() => import("./layouts/_default/NotFoundPage"));
 
@@ -30,6 +33,7 @@ function App() {
             element={<ProductManagementPage />}
           />
           <Route path="user-management" element={<UserManagementPage />} />
+          <Route path="app-integrations" element={<AppIntegrationPage />} />
           <Route path="setting" element={<SettingPage />} />
         </Route>
 
