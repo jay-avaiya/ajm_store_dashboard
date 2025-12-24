@@ -10,6 +10,7 @@ const NotificationBox = () => {
           Notifications
         </span>
       </div>
+
       <div className="h-[1px] w-full border border-[#E4E4E4]"></div>
 
       {/* Notificationss  */}
