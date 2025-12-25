@@ -77,7 +77,7 @@ const AppTable = () => {
                 <td className="px-6 font-normal text-center text-[#5C5C5C]">
                   21345215149
                 </td>
-                <td className="px-6 font-normal text-center text-[#5C5C5C] whitespace-nowrap text-ellipsis overflow-hidden">
+                <td className="px-6 font-normal text-center text-[#5C5C5C] whitespace-nowrap text-ellipsis">
                   Rahul Shetty
                 </td>
                 <td className="px-6 font-normal text-center text-[#5C5C5C]">
