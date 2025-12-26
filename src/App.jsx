@@ -36,7 +36,7 @@ function App() {
             element={<ProductManagementPage />}
           />
           <Route path="user-management" element={<UserManagementPage />} />
-          <Route path="user-management" element={<SalesAnalyticsPage />} />
+          <Route path="sales-analytics" element={<SalesAnalyticsPage />} />
           <Route path="app-integrations" element={<AppIntegrationPage />} />
           <Route path="setting" element={<SettingPage />} />
         </Route>
