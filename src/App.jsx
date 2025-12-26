@@ -22,6 +22,9 @@ const SettingPage = lazy(() => import("./pages/Main/SettingPage/Setting"));
 const InverntoryTrackingPage = lazy(() =>
   import("./pages/Main/InventoryTrackingPage/InventoryTracking")
 );
+const PaymentGatewayPage = lazy(() =>
+  import("./pages/Main/PaymentGatewayPage/PaymentGateway")
+);
 
 const NotFoundPage = lazy(() => import("./layouts/_default/NotFoundPage"));
 
@@ -44,6 +47,7 @@ function App() {
             path="inventory-tracking"
             element={<InverntoryTrackingPage />}
           />
+          <Route path="payment-gateway" element={<PaymentGatewayPage />} />
           <Route path="app-integrations" element={<AppIntegrationPage />} />
           <Route path="setting" element={<SettingPage />} />
         </Route>

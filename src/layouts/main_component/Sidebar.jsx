@@ -59,7 +59,7 @@ const Sidebar = () => {
     {
       label: "Payment Gateway Integration",
       icon: RiMoneyRupeeCircleFill,
-      path: "/dashboard/payment",
+      path: "/dashboard/payment-gateway",
     },
     {
       label: "Shipping & Delivery Settings",
@@ -115,7 +115,7 @@ const Sidebar = () => {
                       }`}
                     >
                       <Icon className="size-6" />
-                      <span className="text-[16px]">{m.label}</span>
+                      <span className="text-[14px]">{m.label}</span>
                     </div>
                   )}
                 </NavLink>
