@@ -2,7 +2,7 @@ import React from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { PiRecordFill } from "react-icons/pi";
 
-const OrderStatus = () => {
+const OrderStatus = ({ img, title }) => {
   return (
     <div className="w-full max-w-[450px] h-[300px] p-6 bg-white rounded-[30px] shadow-[0_6px_7px_0_rgba(0,0,0,0.25)] space-y-4">
       {/* Header */}
@@ -10,7 +10,7 @@ const OrderStatus = () => {
         <div className="flex items-center gap-x-2">
           <PiRecordFill className="size-7 text-[#FF1919]" />
           <span className="text-[16px] font-medium text-[#222222]">
-            Order Status
+            {title || "Order Status"}
           </span>
         </div>
         <button className="flex items-center gap-x-2 p-3 shadow-[0_0_10px_0_rgba(0,0,0,0.25)] rounded-full">
@@ -24,7 +24,7 @@ const OrderStatus = () => {
 
       <div className="w-full h-[70%]">
         <img
-          src="/sales_1.png"
+          src={img || "/sales_1.png"}
           alt="slaes"
           className="object-contain w-full h-full"
         />

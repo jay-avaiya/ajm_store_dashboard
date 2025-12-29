@@ -77,9 +77,9 @@ const SalesAnalytics = () => {
         {/* graphs */}
         <div className="grid grid-cols-2 w-full place-items-center gap-y-6">
           <OrderStatus />
-          <OrderStatus />
-          <OrderStatus />
-          <OrderStatus />
+          <OrderStatus img={"/sales_2.png"} title={"Customer Insights"} />
+          <OrderStatus img={"/sales_3.png"} title={"Sales Trends"} />
+          <OrderStatus img={"/sales_4.png"} title={"Export Sales Reports"} />
         </div>
       </div>
 
