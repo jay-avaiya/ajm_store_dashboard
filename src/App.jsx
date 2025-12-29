@@ -25,6 +25,18 @@ const InverntoryTrackingPage = lazy(() =>
 const PaymentGatewayPage = lazy(() =>
   import("./pages/Main/PaymentGatewayPage/PaymentGateway")
 );
+const OrderAndReturnsPage = lazy(() =>
+  import("./pages/Main/OrdersAndReturnsPage/OrderAndReturn")
+);
+const PromotionPage = lazy(() =>
+  import("./pages/Main/PromotionPage/Promotion")
+);
+const NotificationPage = lazy(() =>
+  import("./pages/Main/NotificationPage/Notification")
+);
+const ShippingDeliverySettingPage = lazy(() =>
+  import("./pages/Main/ShippingDeliverySettingPage/ShippingSetting")
+);
 
 const NotFoundPage = lazy(() => import("./layouts/_default/NotFoundPage"));
 
@@ -42,10 +54,17 @@ function App() {
             element={<ProductManagementPage />}
           />
           <Route path="user-management" element={<UserManagementPage />} />
+          <Route path="orders-and-returns" element={<OrderAndReturnsPage />} />
+          <Route path="promotion" element={<PromotionPage />} />
+          <Route path="notification" element={<NotificationPage />} />
           <Route path="sales-analytics" element={<SalesAnalyticsPage />} />
           <Route
             path="inventory-tracking"
             element={<InverntoryTrackingPage />}
+          />
+          <Route
+            path="shipping-delivery-setting"
+            element={<ShippingDeliverySettingPage />}
           />
           <Route path="payment-gateway" element={<PaymentGatewayPage />} />
           <Route path="app-integrations" element={<AppIntegrationPage />} />
