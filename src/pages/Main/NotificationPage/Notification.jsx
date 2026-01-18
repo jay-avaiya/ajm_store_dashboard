@@ -139,6 +139,9 @@ const Notification = () => {
           </div>
         </div>
 
+        {/* Divider */}
+        <div className="w-full h-[1px] border border-[#C0C0C0] my-6"></div>
+
         {/* Table */}
         <div className="w-full h-full">
           <NotificationTable

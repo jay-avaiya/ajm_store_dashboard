@@ -10,7 +10,9 @@ const NotificationTable = ({ data, activeTab }) => {
         <table className="w-full border-collapse table-fixed">
           <thead>
             <tr className="h-[64px] border-b border-[#E5E7EB]">
-              <th className="px-6 font-normal text-center">Notification ID</th>
+              <th className="px-6 font-normal text-center whitespace-nowrap">
+                Notification ID
+              </th>
               <th className="px-6 font-normal text-center">Type</th>
               <th className="px-6 font-normal text-center">Message</th>
               <th className="px-6 font-normal text-center">Status</th>
