@@ -1,10 +1,15 @@
 import { useRef } from "react";
 
-const PanelWrapper = ({ isOpen, children, className }) => {
+const PanelWrapper = ({ isOpen, children, className, style = {} }) => {
   const ref = useRef(null);
 
   return isOpen ? (
-    <div ref={ref} onClick={(e) => e.stopPropagation()} className={className}>
+    <div
+      style={style}
+      ref={ref}
+      onClick={(e) => e.stopPropagation()}
+      className={className}
+    >
       {children}
     </div>
   ) : null;
