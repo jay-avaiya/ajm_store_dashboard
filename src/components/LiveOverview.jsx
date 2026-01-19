@@ -1,13 +1,13 @@
 import React from "react";
 import { PiRecordFill } from "react-icons/pi";
 
-const LiveOverview = ({ src }) => {
+const LiveOverview = ({ src, title }) => {
   return (
     <div className="w-[300px] bg-white rounded-3xl px-5 py-4 space-y-3 shadow-[0_6px_7px_0_rgba(0,0,0,0.25)]">
       <div className="flex items-center gap-x-3">
         <PiRecordFill className="size-5 text-[#FF1919]" />
-        <span className="text-2xl font-medium text-[#222222]">
-          Live Overview
+        <span className="text-xl font-medium text-[#222222]">
+          {title || "Live Overview"}
         </span>
       </div>
 
