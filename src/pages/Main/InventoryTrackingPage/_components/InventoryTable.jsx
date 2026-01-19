@@ -12,10 +12,8 @@ const InventoryTable = () => {
               <th className="px-6 font-normal text-center">Order ID</th>
               <th className="px-6 font-normal text-center">Name</th>
               <th className="px-6 font-normal text-center">Category</th>
-              <th className="px-6 font-normal text-center whitespace-nowrap">
-                Current Stock
-              </th>
-              <th className="px-6 font-normal text-center whitespace-nowrap">
+              <th className="px-6 font-normal text-center ">Current Stock</th>
+              <th className="px-6 font-normal text-center ">
                 Minimum threshold
               </th>
               <th className="px-6 font-normal text-center">Status</th>
