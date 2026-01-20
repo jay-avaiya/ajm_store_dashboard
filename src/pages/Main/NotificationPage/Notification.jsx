@@ -61,9 +61,9 @@ const Notification = () => {
     : notifications;
 
   return (
-    <div className="flex-1 flex justify-between mt-8">
+    <div className="flex-1 flex justify-between pt-8  min-h-0  h-full">
       {/* Left content */}
-      <div className="w-full max-w-[980px] h-full">
+      <div className="w-full max-w-[980px] h-full overflow-y-auto no-scrollbar no-scroll-chain pr-2 pb-4">
         {/* Header content */}
         <div className="flex items-center gap-x-3">
           <TbBellPlusFilled className="size-6" />
@@ -143,16 +143,12 @@ const Notification = () => {
         <div className="w-full h-[1px] border border-[#C0C0C0] my-6"></div>
 
         {/* Table */}
-        <div className="w-full h-full">
-          <NotificationTable
-            data={filteredNotifications}
-            activeTab={activeTab}
-          />
-        </div>
+
+        <NotificationTable data={filteredNotifications} activeTab={activeTab} />
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4 mb-4">
+      <div className="flex flex-col px-4 gap-y-4  h-full max-w-[320px] shrink-0 overflow-y-auto no-scrollbar no-scroll-chain pb-4 mr-2">
         <FilterBox />
         <NotificationStats />
       </div>

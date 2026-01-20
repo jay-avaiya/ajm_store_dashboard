@@ -36,9 +36,9 @@ const UserManagement = () => {
   const HeaderIcon = headerIcon[pageMode];
 
   return (
-    <div className="flex-1 flex justify-between mt-8 overflow-hidden">
+    <div className="flex-1 flex justify-between pt-8 min-h-0 h-full overflow-hidden">
       {/* Left content */}
-      <div className="relative w-full max-w-[980px] h-full">
+      <div className="relative w-full max-w-[980px] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
         {/* Header content */}
         <div className="flex items-center gap-x-3">
           <HeaderIcon className="size-6" />
@@ -164,7 +164,7 @@ const UserManagement = () => {
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4 mb-4">
+      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[320px] shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pb-4 mr-2">
         <NotificationBox />
         <FilterBox />
         {(pageMode === "initial" || pageMode === "bulk") && <UserStatus />}
