@@ -70,64 +70,7 @@ const PaymentTable = ({ view, setView }) => {
         </table>
       </div>
 
-      {view && (
-        <div className="absolute top-0 -right-79 bg-white border border-[#C0C0C0] shadow-[0_4px_18px_0_rgba(0,0,0,0.25)] w-full max-w-[310px] flex flex-col items-center rounded-3xl h-[380px]">
-          <h3 className="text-2xl">View Transaction</h3>
-
-          <div className="w-full h-[1px] border-b border-[#C0C0C0] my-2" />
-
-          <div className="w-full mt-5 flex flex-col gap-y-4 px-3">
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-x-2 w-full">
-              <p className="text-sm text-left">Transaction ID</p>
-              <p className="text-sm text-center">-</p>
-              <p className="text-[#5C5C5C] text-[10px] justify-self-end">
-                21345215149
-              </p>
-            </div>
-
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-x-2 w-full">
-              <p className="text-sm text-left">User Name</p>
-              <p className="text-sm text-center">-</p>
-              <p className="text-[#5C5C5C] text-[10px] justify-self-end">
-                Aarav Mehta
-              </p>
-            </div>
-
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-x-2 w-full">
-              <p className="text-sm text-left">Payment Gateway</p>
-              <p className="text-sm text-center">-</p>
-              <p className="text-[#5C5C5C] text-[10px] justify-self-end">
-                Paytm
-              </p>
-            </div>
-
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-x-2 w-full">
-              <p className="text-sm text-left">Date</p>
-              <p className="text-sm text-center">-</p>
-              <p className="text-[#5C5C5C] text-[10px] justify-self-end">
-                7 July, 2025
-              </p>
-            </div>
-
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-x-2 w-full">
-              <p className="text-sm text-left">Amount</p>
-              <p className="text-sm text-center">-</p>
-              <p className="text-[#5C5C5C] text-[10px] justify-self-end">
-                Rs 1,299
-              </p>
-            </div>
-
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-x-2 w-full">
-              <p className="text-sm text-left">Status</p>
-              <p className="text-sm text-center">-</p>
-              <div className="flex items-center gap-x-3 px-4 py-1 text-white text-[10px] justify-self-end bg-[#44D769] rounded-full">
-                <span>Active</span>
-                <IoMdArrowDropup />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 };

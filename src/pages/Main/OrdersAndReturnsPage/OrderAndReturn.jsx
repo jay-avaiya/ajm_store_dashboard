@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import NotificationBox from "../../../components/NotificationBox";
 import FilterBox from "../../../components/FilterBox";
-import UserStatus from "../../../components/UserStatus";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { ImUsers } from "react-icons/im";
 import { MdAutoDelete, MdOutlineControlPointDuplicate } from "react-icons/md";
 import { FaPencilAlt } from "react-icons/fa";
-import { TfiLayersAlt } from "react-icons/tfi";
-import OrderPlaced from "../../../components/OrderPlaced";
-import ActiveUser from "../../../components/ActiveUser";
 import LiveOverview from "../../../components/LiveOverview";
 import { IoBag } from "react-icons/io5";
 import OrderTable from "./_components/OrderTable";

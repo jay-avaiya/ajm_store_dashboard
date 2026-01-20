@@ -7,9 +7,9 @@ import AppTable from "./_components/AppTable";
 
 const AppIntegration = () => {
   return (
-    <div className="flex-1 flex justify-between mt-8">
+    <div className="flex-1 flex justify-between pt-8 min-h-0 h-full overflow-hidden">
       {/* Left content */}
-      <div className="w-full max-w-[980px] h-full">
+      <div className="relative w-full max-w-[980px] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
         {/* Header content */}
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center gap-x-3">
@@ -68,7 +68,7 @@ const AppIntegration = () => {
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4 mb-4">
+      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[320px] shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain mr-2 pb-4">
         {/* Notifications */}
         <NotificationBox />
         <FilterBox />
