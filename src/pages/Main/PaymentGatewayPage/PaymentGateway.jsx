@@ -14,7 +14,7 @@ const PaymentGateway = () => {
   return (
     <div className="flex-1 flex justify-between pt-8 min-h-0 h-full overflow-hidden ">
       {/* Left content */}
-      <div className="relative w-full max-w-[980px] h-full min-h-0">
+      <div className="relative w-full max-w-[100%] h-full min-h-0">
         <div className="h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
           {/* Header content */}
           <div className="w-full flex items-center justify-between">
@@ -78,11 +78,11 @@ const PaymentGateway = () => {
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-4  rounded-full w-full bg-white"
+                  className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-2  rounded-full w-full bg-white"
                 />
                 <FaMagnifyingGlass className="size-5 absolute right-3 text-[#1D7BBB]" />
               </div>
-              <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-4">
+              <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-2">
                 <span className="text-[#222222] text-[16px]">
                   4000 Listed Products
                 </span>
@@ -219,7 +219,7 @@ const PaymentGateway = () => {
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4 h-full min-h-0 max-w-[320px] shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain mr-2 pb-4">
+      <div className="flex flex-col px-4 gap-y-4 h-full min-h-0 max-w-[26%] w-full shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain mr-2 pb-4">
         {/* Notifications */}
         <NotificationBox />
         <FilterBox />
