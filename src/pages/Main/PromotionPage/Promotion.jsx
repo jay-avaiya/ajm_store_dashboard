@@ -110,7 +110,7 @@ const Promotion = () => {
             </div>
 
             {tableMode === "normal" && (
-              <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-4">
+              <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-2">
                 <span className="text-[#222222] text-[16px]">
                   4000 Listed Products
                 </span>
