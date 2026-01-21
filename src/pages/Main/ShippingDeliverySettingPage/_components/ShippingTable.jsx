@@ -18,7 +18,7 @@ const ShippingTable = () => {
                 Dispatch Date
               </th>
               <th className="px-4 text-center font-normal w-[120px]">Status</th>
-              <th className="px-4 text-center font-normal whitespace-nowrap">
+              <th className="px-4 text-center font-normal">
                 Expected Delivery
               </th>
               <th className="px-4 text-center font-normal w-[140px]">Action</th>

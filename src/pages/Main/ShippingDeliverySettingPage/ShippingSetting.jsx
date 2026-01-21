@@ -33,7 +33,7 @@ const ShippingSetting = () => {
   return (
     <div className="flex-1 flex justify-between pt-8 min-h-0 h-full overflow-hidden">
       {/* Left content */}
-      <div className="relative w-full max-w-[980px] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
+      <div className="relative w-full max-w-[100%] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
         {/* Header content */}
         <div className="flex items-center gap-x-3">
           <VscWatch className="size-6" />
@@ -44,14 +44,14 @@ const ShippingSetting = () => {
         <div className="w-full h-[1px] border border-[#C0C0C0] my-4"></div>
 
         {/* stats card */}
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full flex items-center gap-x-3">
           {/* card 1 - Shipping Partners Setup */}
           <div
             onClick={(e) => {
               e.stopPropagation();
               togglePanel("shipping");
             }}
-            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[230px] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
+            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[25%] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
           >
             <h4>Shipping Partners Setup</h4>
             <FaBox className="size-6 text-[#EDC111]" />
@@ -63,7 +63,7 @@ const ShippingSetting = () => {
               e.stopPropagation();
               togglePanel("delivery");
             }}
-            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[230px] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
+            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[25%] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
           >
             <h4>Delivery Zones</h4>
             <IoLocationSharp className="size-6 text-[#1D7BBB]" />
@@ -75,7 +75,7 @@ const ShippingSetting = () => {
               e.stopPropagation();
               togglePanel("timeline");
             }}
-            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[230px] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
+            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[25%] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
           >
             <h4 className="w-[60%]">Delivery Timelines</h4>
             <FaBox className="size-6 text-[#34C759]" />
@@ -87,7 +87,7 @@ const ShippingSetting = () => {
               e.stopPropagation();
               togglePanel("charges");
             }}
-            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[230px] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
+            className="bg-[#F9FDFF] rounded-3xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-lg  px-4 py-5 flex items-center justify-between w-full max-w-[25%] h-[70px] active:scale-95 duration-100 transition-all cursor-pointer"
           >
             <h4>Shipping Charges</h4>
             <TbShoppingBagCheck className="size-6 text-[#FC893E]" />
@@ -107,11 +107,11 @@ const ShippingSetting = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-4  rounded-full w-full bg-white"
+                className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-2  rounded-full w-full bg-white"
               />
               <FaMagnifyingGlass className="size-5 absolute right-3 text-[#1D7BBB]" />
             </div>
-            <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-4">
+            <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-2">
               <span className="text-[#222222] text-[16px]">
                 4000 Listed Products
               </span>
@@ -323,7 +323,7 @@ const ShippingSetting = () => {
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[320px] shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain mr-2 pb-4">
+      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[26%] w-full shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain mr-2 pb-4">
         <NotificationBox />
         <FilterBox />
         <LiveOverview />
