@@ -347,7 +347,7 @@ const ProductManagement = () => {
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[25%] shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pb-4 mr-2">
+      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[26%] w-full shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pb-4 mr-2">
         <NotificationBox />
         <FilterBox />
         <LiveOverview src={"/sales_4.png"} />
