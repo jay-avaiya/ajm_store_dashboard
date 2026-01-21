@@ -61,7 +61,7 @@ const NotificationTable = ({ data, activeTab }) => {
                     Jul 7, 2025
                   </td>
                   <td className="px-3 font-normal text-center text-[#1D7BBB] text-sm">
-                    <div className="flex items-center gap-x-2">
+                    <div className="flex items-center justify-center gap-x-2">
                       {activeTab === null && (
                         <>
                           <div className="flex items-center gap-x-1 cursor-pointer">

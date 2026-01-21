@@ -63,7 +63,7 @@ const Notification = () => {
   return (
     <div className="flex-1 flex justify-between pt-8  min-h-0  h-full">
       {/* Left content */}
-      <div className="w-full max-w-[980px] h-full overflow-y-auto no-scrollbar no-scroll-chain pr-2 pb-4">
+      <div className="w-full max-w-[100%] h-full overflow-y-auto no-scrollbar no-scroll-chain pr-2 pb-4">
         {/* Header content */}
         <div className="flex items-center gap-x-3">
           <TbBellPlusFilled className="size-6" />
@@ -127,11 +127,11 @@ const Notification = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-4  rounded-full w-full bg-white"
+                className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-2  rounded-full w-full bg-white"
               />
               <FaMagnifyingGlass className="size-5 absolute right-3 text-[#1D7BBB]" />
             </div>
-            <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-4">
+            <div className=" bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center p-2">
               <span className="text-[#222222] text-[16px]">
                 4000 Listed Products
               </span>
@@ -148,7 +148,7 @@ const Notification = () => {
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4  h-full max-w-[320px] shrink-0 overflow-y-auto no-scrollbar no-scroll-chain pb-4 mr-2">
+      <div className="flex flex-col px-4 gap-y-4  h-full max-w-[26%] w-full shrink-0 overflow-y-auto no-scrollbar no-scroll-chain pb-4 mr-2">
         <FilterBox />
         <NotificationStats />
       </div>
