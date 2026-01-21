@@ -4,7 +4,7 @@ import { PiSlidersHorizontalLight } from "react-icons/pi";
 
 const FilterBox = () => {
   return (
-    <div className="w-[300px] bg-white rounded-3xl px-5 py-4 space-y-2 shadow-[0_6px_7px_0_rgba(0,0,0,0.25)]">
+    <div className="w-[100%] bg-white rounded-3xl px-5 py-4 space-y-2 shadow-[0_6px_7px_0_rgba(0,0,0,0.25)]">
       <div className="flex items-center gap-x-2">
         <PiSlidersHorizontalLight className="size-8 text-[#1D7BBB]" />
         <span className="text-2xl font-medium text-[#222222]">Filters</span>
