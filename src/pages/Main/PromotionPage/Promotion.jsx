@@ -34,7 +34,7 @@ const Promotion = () => {
   return (
     <div className="flex-1 flex justify-between pt-8 min-h-0 h-full overflow-hidden">
       {/* Left content */}
-      <div className="relative w-full max-w-[980px] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
+      <div className="relative w-full max-w-[100%] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
         {/* Header content */}
         <div className="flex items-center gap-x-3">
           <Watch className="size-6" />
@@ -104,7 +104,7 @@ const Promotion = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-4  rounded-full w-full bg-white"
+                className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none p-2  rounded-full w-full bg-white"
               />
               <FaMagnifyingGlass className="size-5 absolute right-3 text-[#1D7BBB]" />
             </div>
@@ -307,7 +307,7 @@ const Promotion = () => {
       </div>
 
       {/* Right content */}
-      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[320px] shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pb-4 mr-2">
+      <div className="flex flex-col px-4 gap-y-4 mb-4 h-full min-h-0 max-w-[26%] w-full shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pb-4 mr-2">
         <NotificationBox />
         <FilterBox />
         <Revenue />

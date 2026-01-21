@@ -5,7 +5,7 @@ import { RiPencilFill } from "react-icons/ri";
 const PromoTable = ({ mode }) => {
   return (
     <div className="space-y-4 mt-5">
-      <div className="border border-[#B0B0B0] bg-white rounded-3xl overflow-x-auto lg:overflow-x-visible">
+      <div className="border border-[#B0B0B0] bg-white rounded-3xl overflow-x-auto">
         {mode === "normal" && (
           <table className="w-full border-collapse table-auto">
             <thead>
@@ -14,7 +14,7 @@ const PromoTable = ({ mode }) => {
                   Campaign ID
                 </th>
                 <th className="px-4 text-center font-normal">Title</th>
-                <th className="px-4 text-center font-normal whitespace-nowrap">
+                <th className="px-4 text-center font-normal">
                   Target Audience
                 </th>
                 <th className="px-4 text-center font-normal">Status</th>
@@ -87,7 +87,7 @@ const PromoTable = ({ mode }) => {
                 <th className="px-4 text-center font-normal whitespace-nowrap">
                   Type
                 </th>
-                <th className="px-4 text-center font-normal whitespace-nowrap">
+                <th className="px-4 text-center font-normal ">
                   Target Audience
                 </th>
                 <th className="px-4 text-center font-normal whitespace-nowrap">
