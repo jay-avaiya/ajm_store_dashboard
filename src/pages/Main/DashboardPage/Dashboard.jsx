@@ -5,9 +5,9 @@ import Table from "./_components/Table";
 
 const Dashboard = () => {
   return (
-    <div className="flex justify-between pt-8 min-h-0 h-full overflow-hidden">
+    <div className=" flex-1 flex justify-between pt-8 min-h-0 h-full overflow-hidden">
       {/* right content */}
-      <div className="max-w-[90%] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
+      <div className="w-full max-w-[100%] h-full min-h-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain pr-2 pb-4">
         {/* stats cards */}
         <StatCard />
 
@@ -16,7 +16,7 @@ const Dashboard = () => {
       </div>
 
       {/* left content */}
-      <div className="flex flex-col px-4 gap-y-4 h-full min-h-0 max-w-[25%] shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain mr-2 pb-4">
+      <div className="flex flex-col px-4 gap-y-4 h-full min-h-0 max-w-[26%] w-full shrink-0 overflow-y-auto overflow-x-hidden no-scrollbar no-scroll-chain mr-2 pb-4">
         {/* notifications */}
         <NotificationBox />
 
@@ -39,7 +39,7 @@ const Dashboard = () => {
             </button>
           </div>
           <div className="w-auto">
-            <img src="/bar.png" alt="pie"   />
+            <img src="/bar.png" alt="pie" />
           </div>
         </div>
       </div>
