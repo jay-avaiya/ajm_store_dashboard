@@ -53,7 +53,7 @@ const StatCard = () => {
         {stats.map((s, i) => (
           <div
             key={s.title}
-            className={`${s.bg} rounded-3xl w-[300px] shadow-[2px_5px_6px_0_rgba(0,0,0,0.1)] px-6 py-3 flex flex-col gap-y-2`}
+            className={`${s.bg} rounded-3xl w-[90%] shadow-[2px_5px_6px_0_rgba(0,0,0,0.1)] px-6 py-3 flex flex-col gap-y-2`}
           >
             <div className="flex items-center justify-between">
               <div className="text-[#222222] space-y-5">

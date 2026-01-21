@@ -64,11 +64,11 @@ const Table = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none py-3 px-3  rounded-full w-full bg-white"
+              className="border border-[#B0B0B0] placeholder:text-[#8E8E8E] outline-none py-2 px-3  rounded-full w-full bg-white"
             />
             <FaMagnifyingGlass className="size-5 absolute right-3 text-[#1D7BBB]" />
           </div>
-          <div className="w-[179px] bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center py-3">
+          <div className="w-[179px] bg-white border border-[#B0B0B0] rounded-full flex items-center justify-center py-2">
             <span className="text-[#222222] text-[16px]">4000 Customers</span>
           </div>
         </div>
