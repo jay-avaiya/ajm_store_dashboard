@@ -5,7 +5,7 @@ import { RiPencilFill } from "react-icons/ri";
 const UserTable = ({ pageMode }) => {
   return (
     <div className="space-y-4 mt-5">
-      <div className="border border-[#B0B0B0] bg-white rounded-3xl overflow-x-auto lg:overflow-x-visible">
+      <div className="border border-[#B0B0B0] bg-white rounded-3xl overflow-x-auto lg:overflow-x-auto">
         <table className="w-full border-collapse table-auto">
           <thead>
             <tr className="h-[64px] border-b border-[#E5E7EB]">

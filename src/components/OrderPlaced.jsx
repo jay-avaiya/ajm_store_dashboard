@@ -4,7 +4,7 @@ import { PiRecordFill } from "react-icons/pi";
 
 const OrderPlaced = () => {
   return (
-    <div className="w-[300px] bg-white rounded-3xl px-5 py-4 space-y-3 shadow-[0_6px_7px_0_rgba(0,0,0,0.25)]">
+    <div className="w-full bg-white rounded-3xl px-5 py-4 space-y-3 shadow-[0_6px_7px_0_rgba(0,0,0,0.25)]">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-x-1">
           <PiRecordFill className="size-5 text-[#FF1919]" />
