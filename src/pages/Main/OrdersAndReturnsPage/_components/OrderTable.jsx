@@ -7,7 +7,7 @@ import { RiPencilFill } from "react-icons/ri";
 const OrderTable = ({ mode }) => {
   return (
     <div className="space-y-4 mt-5">
-      <div className="border border-[#B0B0B0] bg-white rounded-3xl overflow-x-auto lg:overflow-x-visible">
+      <div className="border border-[#B0B0B0] bg-white rounded-3xl overflow-x-auto lg:overflow-x-auto">
         <table className="w-full border-collapse table-auto">
           <thead>
             {mode !== "return" && (
@@ -15,9 +15,7 @@ const OrderTable = ({ mode }) => {
                 <th className="px-4 text-center font-normal w-[70px] whitespace-nowrap">
                   Order ID
                 </th>
-                <th className="px-4 text-center font-normal whitespace-nowrap">
-                  Customer Name
-                </th>
+                <th className="px-4 text-center font-normal">Customer Name</th>
                 <th className="px-4 text-center font-normal whitespace-nowrap">
                   Amount Status
                 </th>
@@ -71,9 +69,7 @@ const OrderTable = ({ mode }) => {
                   key={_}
                 >
                   <td className="px-4 text-center">21345215149</td>
-                  <td className="px-4 text-center whitespace-nowrap">
-                    Akash Chaudhary
-                  </td>
+                  <td className="px-4 text-center ">Akash Chaudhary</td>
 
                   <td className="px-4 text-center">
                     <div className="inline-flex items-center gap-x-2  px-2 py-1 text-[10px] border border-[#44D769] text-[#44D769] rounded-full w-[120px]">
