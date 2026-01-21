@@ -4,7 +4,7 @@ import { PiRecordFill } from "react-icons/pi";
 
 const OrderStatus = ({ img, title }) => {
   return (
-    <div className="w-full max-w-[450px] h-[300px] p-6 bg-white rounded-[30px] shadow-[0_6px_7px_0_rgba(0,0,0,0.25)] space-y-4">
+    <div className="w-full max-w-[100%] h-[300px] p-6 bg-white rounded-[30px] shadow-[0_6px_7px_0_rgba(0,0,0,0.25)] space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-x-2">
@@ -13,7 +13,7 @@ const OrderStatus = ({ img, title }) => {
             {title || "Order Status"}
           </span>
         </div>
-        <button className="flex items-center gap-x-2 p-3 shadow-[0_0_10px_0_rgba(0,0,0,0.25)] rounded-full">
+        <button className="flex items-center gap-x-2 p-2 shadow-[0_0_10px_0_rgba(0,0,0,0.25)] rounded-full">
           <span className="text-[10px] text-[#222222]">Monthly</span>
           <MdKeyboardArrowUp size={16} color="1D7BBB" />
         </button>
