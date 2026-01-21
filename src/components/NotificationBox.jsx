@@ -17,21 +17,21 @@ const NotificationBox = () => {
       <div className="relative w-full bg-[#F7F7F7] flex items-center px-3 py-2 rounded-2xl gap-x-3">
         <GoBellFill size={20} />
         <span className="text-[16px] text-[#696969]">One new Order</span>
-        <span className="absolute  right-0 bottom-0 text-[10px] text-[#8E8E8E]">
+        <span className="absolute  right-2 bottom-1 text-[10px] text-[#8E8E8E]">
           50 min ago
         </span>
       </div>
       <div className="relative w-full bg-[#F7F7F7] flex items-center px-3 py-2 rounded-2xl gap-x-3">
         <GoBellFill size={20} />
         <span className="text-[16px] text-[#696969]">We got one return</span>
-        <span className="absolute  right-0 bottom-0 text-[10px] text-[#8E8E8E]">
+        <span className="absolute  right-2 bottom-1 text-[10px] text-[#8E8E8E]">
           1hr ago
         </span>
       </div>
       <div className="relative w-full bg-[#F7F7F7] flex items-center px-3 py-2 rounded-2xl gap-x-3">
         <GoBellFill size={20} />
         <span className="text-[16px] text-[#696969]">Unknown Messages</span>
-        <span className="absolute  right-0 bottom-0 text-[10px] text-[#8E8E8E]">
+        <span className="absolute  right-2 bottom-1 text-[10px] text-[#8E8E8E]">
           2hr ago
         </span>
       </div>
