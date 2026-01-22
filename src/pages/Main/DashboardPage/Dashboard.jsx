@@ -2,6 +2,8 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 import StatCard from "./_components/StatCard";
 import NotificationBox from "../../../components/NotificationBox";
 import Table from "./_components/Table";
+import Piechart from "../../../components/charts/Piechart";
+import Barchart from "../../../components/charts/Barchart";
 
 const Dashboard = () => {
   return (
@@ -24,7 +26,8 @@ const Dashboard = () => {
         <div className="w-[100%] bg-white rounded-3xl px-5 py-4 space-y-3 shadow-[0_6px_7px_0_rgba(0,0,0,0.25)]">
           <h3 className="text-2xl text-[#5A5A5A]">Sales by categories</h3>
           <div className="w-auto">
-            <img src="/pie.png" alt="pie" />
+            {/* <img src="/pie.png" alt="pie" /> */}
+            <Piechart />
           </div>
         </div>
 
@@ -39,7 +42,8 @@ const Dashboard = () => {
             </button>
           </div>
           <div className="w-auto">
-            <img src="/bar.png" alt="pie" />
+            {/* <img src="/bar.png" alt="pie" /> */}
+            <Barchart />
           </div>
         </div>
       </div>

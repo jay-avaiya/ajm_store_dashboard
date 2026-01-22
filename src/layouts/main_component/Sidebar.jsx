@@ -1,11 +1,14 @@
+import { Megaphone, Watch } from "lucide-react";
 import React, { useEffect, useRef } from "react";
 import { BiBrightness } from "react-icons/bi";
+import { ImUsers } from "react-icons/im";
 import {
   MdAddAlert,
   MdAmpStories,
   MdAutoGraph,
   MdCampaign,
   MdExitToApp,
+  MdNotificationsActive,
   MdOutlineInventory,
 } from "react-icons/md";
 import { PiCodesandboxLogo, PiHandCoinsFill } from "react-icons/pi";
@@ -23,12 +26,12 @@ const Sidebar = () => {
     },
     {
       label: "Product Management",
-      icon: VscWatch,
+      icon: Watch,
       path: "/dashboard/product-management",
     },
     {
       label: "User Management",
-      icon: RiUser3Fill,
+      icon: ImUsers,
       path: "/dashboard/user-management",
     },
     {
@@ -38,12 +41,12 @@ const Sidebar = () => {
     },
     {
       label: "Promotions & Newsletter Tools",
-      icon: MdCampaign,
+      icon: Megaphone,
       path: "/dashboard/promotion",
     },
     {
       label: "Notification Panel",
-      icon: MdAddAlert,
+      icon: MdNotificationsActive,
       path: "/dashboard/notification",
     },
     {
