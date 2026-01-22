@@ -1,6 +1,7 @@
 import React from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { PiRecordFill } from "react-icons/pi";
+import Piechart from "./charts/Piechart";
 
 const ActiveUser = () => {
   return (
@@ -20,7 +21,8 @@ const ActiveUser = () => {
       <div className="h-[1px] w-full border border-[#E4E4E4]"></div>
 
       <div className="w-auto">
-        <img src="/pie.png" alt="pie" className="" />
+        {/* <img src="/pie.png" alt="pie" className="" /> */}
+        <Piechart />
       </div>
     </div>
   );

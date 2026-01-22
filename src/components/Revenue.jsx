@@ -1,5 +1,6 @@
 import React from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
+import Barchart from "./charts/Barchart";
 
 const Revenue = () => {
   return (
@@ -13,7 +14,8 @@ const Revenue = () => {
         </button>
       </div>
       <div className="w-auto">
-        <img src="/bar.png" alt="pie" />
+        {/* <img src="/bar.png" alt="pie" /> */}
+        <Barchart />
       </div>
     </div>
   );
