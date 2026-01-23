@@ -1,4 +1,5 @@
 import { PiRecordFill } from "react-icons/pi";
+import NotificationPercentage from "../pages/Main/NotificationPage/_components/NotificationPercentage";
 
 const NotificationStats = () => {
   return (
@@ -13,7 +14,8 @@ const NotificationStats = () => {
       <div className="h-[1px] w-full border border-[#E4E4E4]" />
 
       <div className="w-auto h-auto">
-        <img src="/noti_stat.png" alt="sales_1.png" className="scale-105" />
+        {/* <img src="/noti_stat.png" alt="sales_1.png" className="scale-105" /> */}
+        <NotificationPercentage />
       </div>
     </div>
   );
