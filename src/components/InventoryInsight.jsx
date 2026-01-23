@@ -1,5 +1,6 @@
 import React from "react";
 import { PiRecordFill } from "react-icons/pi";
+import RadialBarchart from "./charts/RadialBarchart";
 
 const InventoryInsight = () => {
   return (
@@ -14,7 +15,8 @@ const InventoryInsight = () => {
       <div className="h-[1px] w-full border border-[#E4E4E4]" />
 
       <div className="w-auto h-auto">
-        <img src="/sales_1.png" alt="sales_1.png" />
+        {/* <img src="/sales_1.png" alt="sales_1.png" /> */}
+        <RadialBarchart />
       </div>
     </div>
   );
