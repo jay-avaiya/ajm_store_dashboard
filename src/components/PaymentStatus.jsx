@@ -1,5 +1,6 @@
 import React from "react";
 import { PiRecordFill } from "react-icons/pi";
+import PaymentStatuschart from "./charts/PaymentStatuschart";
 
 const PaymentStatus = () => {
   return (
@@ -13,8 +14,9 @@ const PaymentStatus = () => {
 
       <div className="h-[1px] w-full border border-[#E4E4E4]" />
 
-      <div>
-        <img src="/payment_status.png" alt="" className="w-auto h-auto" />
+      <div className="w-auto">
+        {/* <img src="/payment_status.png" alt="" className="w-auto h-auto" /> */}
+        <PaymentStatuschart />
       </div>
     </div>
   );
