@@ -1,6 +1,7 @@
 import React from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { PiRecordFill } from "react-icons/pi";
+import OrderPlacedChart from "./charts/OrderPlacedChart";
 
 const OrderPlaced = () => {
   return (
@@ -20,7 +21,8 @@ const OrderPlaced = () => {
       <div className="h-[1px] w-full border border-[#E4E4E4]"></div>
 
       <div className="w-auto">
-        <img src="/orderPlaced.png" alt="orderPlaced" className="" />
+        {/* <img src="/orderPlaced.png" alt="orderPlaced" className="" /> */}
+        <OrderPlacedChart />
       </div>
     </div>
   );

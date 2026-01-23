@@ -1,4 +1,5 @@
 import { PiRecordFill } from "react-icons/pi";
+import UserStatusChart from "./charts/UserStatusChart";
 
 const UserStatus = () => {
   return (
@@ -10,8 +11,9 @@ const UserStatus = () => {
 
       <div className="h-[1px] w-full border border-[#E4E4E4]" />
 
-      <div>
-        <img src="/user_status.png" alt="user-status" />
+      <div className="w-auto">
+        {/* <img src="/user_status.png" alt="user-status" /> */}
+        <UserStatusChart />
       </div>
     </div>
   );
