@@ -7,7 +7,7 @@ import {
   Tooltip,
 } from "recharts";
 
-const Linechart = () => {
+const Linechart = ({ size }) => {
   const data = [
     { month: "Jan", red: 10, green: 15 },
     { month: "Feb", red: 20, green: 25 },
@@ -24,12 +24,12 @@ const Linechart = () => {
   ];
 
   return (
-    <div className="h-64">
+    <div className="h-64 w-full">
       <ResponsiveContainer width={"100%"} height={"100%"}>
         <LineChart data={data}>
           <XAxis
             dataKey={"month"}
-            tick={{ fontSize: 6, fill: "#8E8E8E" }}
+            tick={{ fontSize: `${size || 6}`, fill: "#8E8E8E" }}
             axisLine={false}
             tickLine={false}
             interval={0}

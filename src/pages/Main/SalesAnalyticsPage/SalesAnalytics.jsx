@@ -4,6 +4,9 @@ import NotificationBox from "../../../components/NotificationBox";
 import FilterBox from "../../../components/FilterBox";
 import TopSellingBox from "../../../components/TopSellingBox";
 import OrderStatus from "./_components/OrderStatus";
+import CustomerInsights from "./_components/CustomerInsights";
+import SalesTrend from "./_components/SalesTrend";
+import ExportSales from "./_components/ExportSales";
 
 const SalesAnalytics = () => {
   return (
@@ -77,9 +80,9 @@ const SalesAnalytics = () => {
         {/* graphs */}
         <div className="grid grid-cols-2 w-full place-items-center gap-6">
           <OrderStatus />
-          <OrderStatus img={"/sales_2.png"} title={"Customer Insights"} />
-          <OrderStatus img={"/sales_3.png"} title={"Sales Trends"} />
-          <OrderStatus img={"/sales_4.png"} title={"Export Sales Reports"} />
+          <CustomerInsights />
+          <SalesTrend />
+          <ExportSales  />
         </div>
       </div>
 
