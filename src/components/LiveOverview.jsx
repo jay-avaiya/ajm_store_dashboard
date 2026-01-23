@@ -1,5 +1,6 @@
 import React from "react";
 import { PiRecordFill } from "react-icons/pi";
+import Linechart from "./charts/Linechart";
 
 const LiveOverview = ({ src, title }) => {
   return (
@@ -13,8 +14,9 @@ const LiveOverview = ({ src, title }) => {
 
       <div className="h-[1px] w-full border border-[#E4E4E4]" />
 
-      <div className="w-fit">
-        <img src={src || "/live.png"} alt="user-status" className="w-fit" />
+      <div className="w-auto">
+        {/* <img src={src || "/live.png"} alt="user-status" className="w-fit" /> */}
+        <Linechart />
       </div>
     </div>
   );
